@@ -1,0 +1,6 @@
+framework module Pods_InjectionExampleUITests {
+  umbrella header "Pods-InjectionExampleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

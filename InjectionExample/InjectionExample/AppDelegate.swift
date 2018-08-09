@@ -8,6 +8,7 @@
 
 import UIKit
 
+// From here to end of file added by Injection Plugin //
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -18,10 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow()
         window?.makeKeyAndVisible()
-        window?.rootViewController = ViewController()
-//        #if DEBUG
+        window?.rootViewController = MYVC()
+        #if DEBUG
         Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle")?.load()
-//        #endif
+        #endif
 
         return true
     }

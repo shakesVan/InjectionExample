@@ -16,7 +16,7 @@ extension UIViewController {
         for subV in view.subviews {
             subV.removeFromSuperview()
         }
-//        awakeFromNib()
+        //如果使用layer 同理删除一下即可
         viewDidLoad()
     }
 
